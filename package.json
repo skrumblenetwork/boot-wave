@@ -1,0 +1,21 @@
+{
+  "name": "boot-wave",
+  "version": "0.0.1",
+  "description": "a wave server for boot",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "pm2 start src/app.js --name boot-wave",
+    "restart": "pm2 restart boot-wave",
+    "stop": "pm2 stop boot-wave"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "crypto-random-string": "^3.2.0",
+    "socket.io": "^2.3.0",
+    "web3": "^1.2.6",
+    "web3-skrumble-extend": "0.0.1"
+  },
+  "devDependencies": {
+    "pm2": "^4.2.3"
+  }
+}
